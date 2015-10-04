@@ -43,6 +43,7 @@
             this.ActualizarButton = new System.Windows.Forms.Button();
             this.label7 = new System.Windows.Forms.Label();
             this.PeliculaIdTextBox = new System.Windows.Forms.TextBox();
+            this.CancelarButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // CalificacionTextBox
@@ -145,7 +146,7 @@
             // 
             this.ActualizarButton.Image = global::RegistroPelicula.Properties.Resources._1443950949_db_update;
             this.ActualizarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.ActualizarButton.Location = new System.Drawing.Point(217, 229);
+            this.ActualizarButton.Location = new System.Drawing.Point(128, 229);
             this.ActualizarButton.Name = "ActualizarButton";
             this.ActualizarButton.Size = new System.Drawing.Size(100, 35);
             this.ActualizarButton.TabIndex = 19;
@@ -170,12 +171,26 @@
             this.PeliculaIdTextBox.Size = new System.Drawing.Size(100, 20);
             this.PeliculaIdTextBox.TabIndex = 0;
             // 
+            // CancelarButton
+            // 
+            this.CancelarButton.Image = global::RegistroPelicula.Properties.Resources._1444000563_stop;
+            this.CancelarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CancelarButton.Location = new System.Drawing.Point(234, 229);
+            this.CancelarButton.Name = "CancelarButton";
+            this.CancelarButton.Size = new System.Drawing.Size(100, 35);
+            this.CancelarButton.TabIndex = 22;
+            this.CancelarButton.Text = "Cancelar";
+            this.CancelarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
+            // 
             // Actualizar
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackgroundImage = global::RegistroPelicula.Properties.Resources._12716555_cine_badajo_y_la_cinta_de_la_pel_cula_imagen_en_3d_aislado_fondo_blanco;
             this.ClientSize = new System.Drawing.Size(400, 276);
+            this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.PeliculaIdTextBox);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.CalificacionTextBox);
@@ -215,5 +230,6 @@
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.TextBox PeliculaIdTextBox;
+        private System.Windows.Forms.Button CancelarButton;
     }
 }

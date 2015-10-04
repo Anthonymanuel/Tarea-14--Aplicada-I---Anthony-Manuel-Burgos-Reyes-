@@ -41,6 +41,7 @@
             this.label6 = new System.Windows.Forms.Label();
             this.CalificacionTextBox = new System.Windows.Forms.TextBox();
             this.RegistrarButton = new System.Windows.Forms.Button();
+            this.CancelarButton = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // label1
@@ -143,7 +144,7 @@
             // 
             this.RegistrarButton.Image = global::RegistroPelicula.Properties.Resources._1443948365_list_add_user;
             this.RegistrarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.RegistrarButton.Location = new System.Drawing.Point(258, 224);
+            this.RegistrarButton.Location = new System.Drawing.Point(205, 224);
             this.RegistrarButton.Name = "RegistrarButton";
             this.RegistrarButton.Size = new System.Drawing.Size(100, 35);
             this.RegistrarButton.TabIndex = 6;
@@ -152,6 +153,19 @@
             this.RegistrarButton.UseVisualStyleBackColor = true;
             this.RegistrarButton.Click += new System.EventHandler(this.RegistrarButton_Click);
             // 
+            // CancelarButton
+            // 
+            this.CancelarButton.Image = global::RegistroPelicula.Properties.Resources._1444000563_stop;
+            this.CancelarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.CancelarButton.Location = new System.Drawing.Point(311, 224);
+            this.CancelarButton.Name = "CancelarButton";
+            this.CancelarButton.Size = new System.Drawing.Size(100, 35);
+            this.CancelarButton.TabIndex = 8;
+            this.CancelarButton.Text = "Cancelar";
+            this.CancelarButton.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.CancelarButton.UseVisualStyleBackColor = true;
+            this.CancelarButton.Click += new System.EventHandler(this.CancelarButton_Click);
+            // 
             // RegistroForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -159,6 +173,7 @@
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackgroundImage = global::RegistroPelicula.Properties.Resources.result;
             this.ClientSize = new System.Drawing.Size(587, 278);
+            this.Controls.Add(this.CancelarButton);
             this.Controls.Add(this.CalificacionTextBox);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.RegistrarButton);
@@ -194,5 +209,6 @@
         private System.Windows.Forms.Button RegistrarButton;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox CalificacionTextBox;
+        private System.Windows.Forms.Button CancelarButton;
     }
 }

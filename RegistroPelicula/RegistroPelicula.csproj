@@ -122,6 +122,7 @@
     <None Include="Resources\1443948365_list-add-user.png" />
     <None Include="Resources\result.jpg" />
     <None Include="Resources\rollo-de-pelicula.png" />
+    <None Include="Resources\1444000563_stop.png" />
     <Content Include="SQLQuery1.sql" />
   </ItemGroup>
   <ItemGroup />

@@ -121,6 +121,12 @@
   <data name="1443950301_adsense_for_search" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1443950301_adsense_for_search.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="rollo-de-pelicula" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\rollo-de-pelicula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="1443950596_show_property" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1443950596_show_property.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="1443948365_list-add-user" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1443948365_list-add-user.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -130,16 +136,13 @@
   <data name="1443950949_db_update" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\1443950949_db_update.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="result" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\result.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
-  </data>
   <data name="12716555-cine-badajo-y-la-cinta-de-la-pel-cula-imagen-en-3d-aislado-fondo-blanco" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\12716555-cine-badajo-y-la-cinta-de-la-pel-cula-imagen-en-3d-aislado-fondo-blanco.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="1443950596_show_property" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\1443950596_show_property.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="result" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\result.jpg;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="rollo-de-pelicula" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\rollo-de-pelicula.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="1444000563_stop" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\1444000563_stop.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

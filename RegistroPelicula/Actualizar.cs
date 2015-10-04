@@ -38,5 +38,16 @@ namespace RegistroPelicula
             CategoriaIdTexBox.Clear();
             MessageBox.Show("Se ha Actualizado la pelicula");
         }
+
+        private void CancelarButton_Click(object sender, EventArgs e)
+        {
+            TituloTextBox.Clear();
+            DescripcionTextBox.Clear();
+            AnoTextBox.Clear();
+            CalificacionTextBox.Clear();
+            IMDBTextBox.Clear();
+            CategoriaIdTexBox.Clear();
+            MessageBox.Show("Se ha cancelado  la pelicula ");
+        }
     }
 }
