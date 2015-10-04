@@ -46,11 +46,22 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Actualizar.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Actualizar.Designer.cs">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </Compile>
     <Compile Include="ConsultaForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="ConsultaForm.Designer.cs">
       <DependentUpon>ConsultaForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Registro.cs">
       <SubType>Form</SubType>
@@ -66,6 +77,9 @@
     <Compile Include="RegistroForm.Designer.cs">
       <DependentUpon>RegistroForm.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="Actualizar.resx">
+      <DependentUpon>Actualizar.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaForm.resx">
       <DependentUpon>ConsultaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -74,13 +88,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
-      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
       <SubType>Designer</SubType>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <Compile Include="Properties\Resources.Designer.cs">
-      <AutoGen>True</AutoGen>
-      <DependentUpon>Resources.resx</DependentUpon>
-    </Compile>
     <EmbeddedResource Include="RegistroForm.resx">
       <DependentUpon>RegistroForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -104,8 +114,17 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
+    <None Include="Resources\1443950949_db_update.png" />
+    <None Include="Resources\12716555-cine-badajo-y-la-cinta-de-la-pel-cula-imagen-en-3d-aislado-fondo-blanco.jpg" />
+    <None Include="Resources\1443950596_show_property.png" />
+    <None Include="Resources\1443950301_adsense_for_search.png" />
+    <None Include="Resources\1443950518_Remove.png" />
+    <None Include="Resources\1443948365_list-add-user.png" />
+    <None Include="Resources\result.jpg" />
+    <None Include="Resources\rollo-de-pelicula.png" />
     <Content Include="SQLQuery1.sql" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

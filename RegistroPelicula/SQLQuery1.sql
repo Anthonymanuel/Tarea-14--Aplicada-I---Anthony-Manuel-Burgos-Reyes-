@@ -1,4 +1,4 @@
-Create Pelicula
+
 use Pelicula
 
 create table Pelicula(

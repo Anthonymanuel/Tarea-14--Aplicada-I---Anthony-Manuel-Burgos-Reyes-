@@ -31,6 +31,11 @@ namespace RegistroPelicula
             consulta.Show();
         }
 
-       
+        private void actualizarToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            Actualizar actualizar = new Actualizar();
+            actualizar.MdiParent = this;
+            actualizar.Show();
+        }
     }
 }

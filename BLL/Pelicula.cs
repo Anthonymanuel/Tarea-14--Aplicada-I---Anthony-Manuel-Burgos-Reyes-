@@ -12,6 +12,8 @@ namespace BLL
     /// </summary>
     public class Pelicula
     {
+        
+
         public int PeliculaId { get; set; }
         public string Titulo { get; set; }
         public string Descripcion { get; set; }
@@ -70,6 +72,17 @@ namespace BLL
         {
             ConexionBaseD conexion = new ConexionBaseD();
             return conexion.ObtenerDatos("select *  from Pelicula ");
+        }
+        /// <summary>
+        /// Para Actulizar  los elementos de una tabla de una base de datos
+        /// </summary>
+        /// <returns>retorna true si actuliza y false sino se actualizo</returns>
+        public bool Actualizar()
+        {
+            ConexionBaseD conexion = new ConexionBaseD();
+            bool act = false;
+            conexion.Ejecutar(String.Format("update Pelicula set Titulo = '{0}',Descripcion='{1}',Ano ='{2}',Calificacion='{3}',IMBD='{4}',CategoriaId='{5}' where PeliculaId='{6}'", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId,this.PeliculaId));
+            return act;
         }
     }
 }
