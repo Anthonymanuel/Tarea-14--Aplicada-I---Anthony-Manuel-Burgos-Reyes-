@@ -1,4 +1,4 @@
-
+create Pelicula
 use Pelicula
 
 create table Pelicula(
@@ -9,5 +9,7 @@ Ano int not null,
 Calificacion int,
 IMBD int ,
 CategoriaId int,
+Foto varchar(200),
+Video varchar(200)
 
 )
