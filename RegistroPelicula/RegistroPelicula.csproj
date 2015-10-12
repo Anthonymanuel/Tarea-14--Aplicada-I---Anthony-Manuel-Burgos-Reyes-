@@ -46,12 +46,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Actualizar.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Actualizar.Designer.cs">
-      <DependentUpon>Actualizar.cs</DependentUpon>
-    </Compile>
     <Compile Include="ConsultaForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -77,9 +71,6 @@
     <Compile Include="RegistroForm.Designer.cs">
       <DependentUpon>RegistroForm.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="Actualizar.resx">
-      <DependentUpon>Actualizar.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="ConsultaForm.resx">
       <DependentUpon>ConsultaForm.cs</DependentUpon>
     </EmbeddedResource>
@@ -123,9 +114,29 @@
     <None Include="Resources\result.jpg" />
     <None Include="Resources\rollo-de-pelicula.png" />
     <None Include="Resources\1444000563_stop.png" />
+    <None Include="Resources\1444509101_document-new.png" />
+    <None Include="Resources\1444509221_Save-as.png" />
     <Content Include="SQLQuery1.sql" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="AxWMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>aximp</WrapperTool>
+      <Isolated>False</Isolated>
+    </COMReference>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.
