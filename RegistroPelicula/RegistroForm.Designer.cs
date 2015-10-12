@@ -212,11 +212,14 @@
             // 
             // SeleccionarButton
             // 
+            this.SeleccionarButton.Image = global::RegistroPelicula.Properties.Resources._1444678362_editor_image_picture_photo;
+            this.SeleccionarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SeleccionarButton.Location = new System.Drawing.Point(296, 184);
             this.SeleccionarButton.Name = "SeleccionarButton";
-            this.SeleccionarButton.Size = new System.Drawing.Size(75, 23);
+            this.SeleccionarButton.Size = new System.Drawing.Size(95, 39);
             this.SeleccionarButton.TabIndex = 14;
             this.SeleccionarButton.Text = "Seleccionar";
+            this.SeleccionarButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SeleccionarButton.UseVisualStyleBackColor = true;
             this.SeleccionarButton.Click += new System.EventHandler(this.SeleccionarButton_Click);
             // 
@@ -239,11 +242,14 @@
             // 
             // SeleccionarVideoButton
             // 
+            this.SeleccionarVideoButton.Image = global::RegistroPelicula.Properties.Resources._1444678385_video;
+            this.SeleccionarVideoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.SeleccionarVideoButton.Location = new System.Drawing.Point(447, 184);
             this.SeleccionarVideoButton.Name = "SeleccionarVideoButton";
-            this.SeleccionarVideoButton.Size = new System.Drawing.Size(75, 23);
+            this.SeleccionarVideoButton.Size = new System.Drawing.Size(90, 39);
             this.SeleccionarVideoButton.TabIndex = 17;
             this.SeleccionarVideoButton.Text = "Seleccionar";
+            this.SeleccionarVideoButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.SeleccionarVideoButton.UseVisualStyleBackColor = true;
             this.SeleccionarVideoButton.Click += new System.EventHandler(this.SeleccionarVideoButton_Click);
             // 

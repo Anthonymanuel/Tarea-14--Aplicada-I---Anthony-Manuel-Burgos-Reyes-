@@ -121,31 +121,40 @@
             // 
             // PauseButton
             // 
+            this.PauseButton.Image = global::RegistroPelicula.Properties.Resources._1444677738_ic_pause_48px;
+            this.PauseButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.PauseButton.Location = new System.Drawing.Point(167, 460);
             this.PauseButton.Name = "PauseButton";
-            this.PauseButton.Size = new System.Drawing.Size(75, 23);
+            this.PauseButton.Size = new System.Drawing.Size(64, 32);
             this.PauseButton.TabIndex = 18;
             this.PauseButton.Text = "Pause";
+            this.PauseButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PauseButton.UseVisualStyleBackColor = true;
             this.PauseButton.Click += new System.EventHandler(this.PauseButton_Click);
             // 
             // StopButton
             // 
-            this.StopButton.Location = new System.Drawing.Point(260, 460);
+            this.StopButton.Image = global::RegistroPelicula.Properties.Resources._1444677751_24_Stop;
+            this.StopButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.StopButton.Location = new System.Drawing.Point(237, 460);
             this.StopButton.Name = "StopButton";
-            this.StopButton.Size = new System.Drawing.Size(75, 23);
+            this.StopButton.Size = new System.Drawing.Size(60, 32);
             this.StopButton.TabIndex = 19;
             this.StopButton.Text = "Stop";
+            this.StopButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.StopButton.UseVisualStyleBackColor = true;
             this.StopButton.Click += new System.EventHandler(this.StopButton_Click);
             // 
             // PlayButton
             // 
-            this.PlayButton.Location = new System.Drawing.Point(86, 459);
+            this.PlayButton.Image = global::RegistroPelicula.Properties.Resources._1444677721_ic_play_arrow_48px;
+            this.PlayButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.PlayButton.Location = new System.Drawing.Point(105, 459);
             this.PlayButton.Name = "PlayButton";
-            this.PlayButton.Size = new System.Drawing.Size(75, 23);
+            this.PlayButton.Size = new System.Drawing.Size(56, 33);
             this.PlayButton.TabIndex = 20;
             this.PlayButton.Text = "Play";
+            this.PlayButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             this.PlayButton.UseVisualStyleBackColor = true;
             this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 

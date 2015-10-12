@@ -116,6 +116,11 @@
     <None Include="Resources\1444000563_stop.png" />
     <None Include="Resources\1444509101_document-new.png" />
     <None Include="Resources\1444509221_Save-as.png" />
+    <None Include="Resources\1444677751_24_Stop.png" />
+    <None Include="Resources\1444677738_ic_pause_48px.png" />
+    <None Include="Resources\1444677721_ic_play_arrow_48px.png" />
+    <None Include="Resources\1444678385_video.png" />
+    <None Include="Resources\1444678362_editor_image_picture_photo.png" />
     <Content Include="SQLQuery1.sql" />
   </ItemGroup>
   <ItemGroup>
