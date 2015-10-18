@@ -61,12 +61,12 @@
             this.GeneroListView = new System.Windows.Forms.ListView();
             this.GeneroColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.ActorListView = new System.Windows.Forms.ListView();
+            this.ActorColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             this.label11 = new System.Windows.Forms.Label();
             this.EstudioComboBox = new System.Windows.Forms.ComboBox();
             this.Seleccionar1Button = new System.Windows.Forms.Button();
             this.label12 = new System.Windows.Forms.Label();
             this.EstudioTextBox = new System.Windows.Forms.TextBox();
-            this.ActorColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.FotoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReproductorAxWindowsMediaPlayer1)).BeginInit();
             this.PeliculaGroupBox.SuspendLayout();
@@ -389,6 +389,10 @@
             this.ActorListView.UseCompatibleStateImageBehavior = false;
             this.ActorListView.View = System.Windows.Forms.View.Details;
             // 
+            // ActorColumnHeader
+            // 
+            this.ActorColumnHeader.Text = "Actores";
+            // 
             // label11
             // 
             this.label11.AutoSize = true;
@@ -437,10 +441,6 @@
             this.EstudioTextBox.ReadOnly = true;
             this.EstudioTextBox.Size = new System.Drawing.Size(118, 20);
             this.EstudioTextBox.TabIndex = 36;
-            // 
-            // ActorColumnHeader
-            // 
-            this.ActorColumnHeader.Text = "Actores";
             // 
             // RegistroPelicula
             // 
