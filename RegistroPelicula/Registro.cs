@@ -19,7 +19,7 @@ namespace RegistroPelicula
 
         private void registrarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            RegistroForm registro = new RegistroForm();
+            RegistroPelicula registro = new RegistroPelicula();
             registro.MdiParent = this;
             registro.Show();
             
@@ -27,10 +27,30 @@ namespace RegistroPelicula
 
         private void consultarToolStripMenuItem_Click(object sender, EventArgs e)
         {
-            ConsultaForm consulta = new ConsultaForm();
+            ConsultaDePelicula consulta = new ConsultaDePelicula();
             consulta.MdiParent = this;
             consulta.Show();
         }
-        
+
+        private void generoToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroGeneros genero = new RegistroGeneros();
+            genero.MdiParent = this;
+            genero.Show();
+        }
+
+        private void actorToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroActores actor = new RegistroActores();
+            actor.MdiParent = this;
+            actor.Show();
+        }
+
+        private void estudioToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            RegistroEstudios estudio = new RegistroEstudios();
+            estudio.MdiParent= this;
+            estudio.Show();
+        }
     }
 }

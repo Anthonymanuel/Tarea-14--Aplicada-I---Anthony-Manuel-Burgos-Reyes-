@@ -60,7 +60,7 @@ namespace DAL
         /// </summary>
         /// <param name="comando">El comando  sql que se desea ejecutar</param>
         /// <returns>retorna la tabla de la base de datos</returns> 
-        public DataTable getDatos(String comando)
+        public DataTable ObtenerDatos(String comando)
         {
             SqlDataAdapter adapter;
             DataTable dt = new DataTable();

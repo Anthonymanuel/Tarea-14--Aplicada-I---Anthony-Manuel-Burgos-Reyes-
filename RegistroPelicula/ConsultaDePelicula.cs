@@ -11,9 +11,9 @@ using BLL;
 
 namespace RegistroPelicula
 {
-    public partial class ConsultaForm : Form
+    public partial class ConsultaDePelicula : Form
     {
-        public ConsultaForm()
+        public ConsultaDePelicula()
         {
             InitializeComponent();
             
@@ -27,7 +27,6 @@ namespace RegistroPelicula
         {
             Pelicula pelicula = new Pelicula();
             DataTable dt = new DataTable();
-            DataTable dt1 = new DataTable();
             string consulta;
             switch (ConsultaComboBox.SelectedIndex) {
               case 0:
@@ -42,7 +41,7 @@ namespace RegistroPelicula
                 }
 
 
-                dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video", consulta);
+                dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD,CategoriaId,Foto,Video, Genero, Actor, Estudio", consulta,"");
                 MostrarDataGridView.DataSource = dt;
                 ReproductorAxWindowsMediaPlayer1.URL = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Video"].Value);
                 FotoPictureBox.ImageLocation = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Foto"].Value);
@@ -58,7 +57,7 @@ namespace RegistroPelicula
                 {
                     consulta = "Titulo = '" +PeliculaIdTextBox.Text + "'";
                 }
-                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video", consulta);
+                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio", consulta,"");
                     MostrarDataGridView.DataSource = dt;
                     ReproductorAxWindowsMediaPlayer1.URL = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Video"].Value);
                     FotoPictureBox.ImageLocation = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Foto"].Value);
@@ -73,7 +72,7 @@ namespace RegistroPelicula
                 {
                     consulta = "Descripcion =" + "'" + PeliculaIdTextBox.Text + "'";
                 }
-                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video", consulta);
+                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio", consulta,"");
                     MostrarDataGridView.DataSource = dt;
                     FotoPictureBox.ImageLocation = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Foto"].Value);
                     ReproductorAxWindowsMediaPlayer1.URL = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Video"].Value);
@@ -87,7 +86,7 @@ namespace RegistroPelicula
                     {
                         consulta = "Ano =" + PeliculaIdTextBox.Text ;
                     }
-                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video", consulta);
+                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio", consulta,"");
                     MostrarDataGridView.DataSource = dt;
                     FotoPictureBox.ImageLocation = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Foto"].Value);
                     ReproductorAxWindowsMediaPlayer1.URL = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Video"].Value);
@@ -101,7 +100,7 @@ namespace RegistroPelicula
                     {
                         consulta = "Calificacion ="+ PeliculaIdTextBox.Text;
                     }
-                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video", consulta);
+                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio", consulta,"");
                     MostrarDataGridView.DataSource = dt;
                     ReproductorAxWindowsMediaPlayer1.URL = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Video"].Value);
                     FotoPictureBox.ImageLocation = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Foto"].Value);
@@ -115,7 +114,7 @@ namespace RegistroPelicula
                     {
                         consulta = "IMBD =" +  PeliculaIdTextBox.Text ;
                     }
-                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video", consulta);
+                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio", consulta,"");
                     MostrarDataGridView.DataSource = dt;
                     FotoPictureBox.ImageLocation = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Foto"].Value);
                     ReproductorAxWindowsMediaPlayer1.URL = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Video"].Value);
@@ -129,7 +128,7 @@ namespace RegistroPelicula
                     {
                         consulta = "ClasificacionId =" + PeliculaIdTextBox.Text ;
                     }
-                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video", consulta);
+                    dt = pelicula.Listado(" PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio", consulta,"");
                     MostrarDataGridView.DataSource = dt;
                     ReproductorAxWindowsMediaPlayer1.URL = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Video"].Value);
                     FotoPictureBox.ImageLocation = Convert.ToString(MostrarDataGridView.CurrentRow.Cells["Foto"].Value);

@@ -46,11 +46,29 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ConsultaForm.cs">
+    <Compile Include="ConsultaDePelicula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="ConsultaForm.Designer.cs">
-      <DependentUpon>ConsultaForm.cs</DependentUpon>
+    <Compile Include="ConsultaDePelicula.Designer.cs">
+      <DependentUpon>ConsultaDePelicula.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroActores.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroActores.Designer.cs">
+      <DependentUpon>RegistroActores.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroEstudios.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroEstudios.Designer.cs">
+      <DependentUpon>RegistroEstudios.cs</DependentUpon>
+    </Compile>
+    <Compile Include="RegistroGeneros.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="RegistroGeneros.Designer.cs">
+      <DependentUpon>RegistroGeneros.cs</DependentUpon>
     </Compile>
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
@@ -65,14 +83,23 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RegistroForm.cs">
+    <Compile Include="RegistroPelicula.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="RegistroForm.Designer.cs">
-      <DependentUpon>RegistroForm.cs</DependentUpon>
+    <Compile Include="RegistroPelicula.Designer.cs">
+      <DependentUpon>RegistroPelicula.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="ConsultaForm.resx">
-      <DependentUpon>ConsultaForm.cs</DependentUpon>
+    <EmbeddedResource Include="ConsultaDePelicula.resx">
+      <DependentUpon>ConsultaDePelicula.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroActores.resx">
+      <DependentUpon>RegistroActores.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroEstudios.resx">
+      <DependentUpon>RegistroEstudios.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="RegistroGeneros.resx">
+      <DependentUpon>RegistroGeneros.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Registro.resx">
       <DependentUpon>Registro.cs</DependentUpon>
@@ -82,8 +109,8 @@
       <SubType>Designer</SubType>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
-    <EmbeddedResource Include="RegistroForm.resx">
-      <DependentUpon>RegistroForm.cs</DependentUpon>
+    <EmbeddedResource Include="RegistroPelicula.resx">
+      <DependentUpon>RegistroPelicula.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
@@ -121,6 +148,19 @@
     <None Include="Resources\1444677721_ic_play_arrow_48px.png" />
     <None Include="Resources\1444678385_video.png" />
     <None Include="Resources\1444678362_editor_image_picture_photo.png" />
+    <None Include="Resources\1444959786_edit-clear.png" />
+    <None Include="Resources\1444960319_Actor_Male_Light.png" />
+    <None Include="Resources\7207407-cartel-de-la-pelicula-de-cine-generos-vintage-background.jpg" />
+    <None Include="Resources\1444960611_Movies_-_Oscar.png" />
+    <None Include="Resources\1444960685_Movies_-_Oscar.png" />
+    <None Include="Resources\sistema-del-negro-de-los-iconos-de-los-géneros-de-la-película-54879374.jpg" />
+    <None Include="Resources\1444961210_Movie_Studio-Android-R.png" />
+    <None Include="Resources\1445133201_actor.png" />
+    <None Include="Resources\1445133316_video-x-generic.png" />
+    <None Include="Resources\1445133441_film_clip_movie_timestamp.png" />
+    <None Include="Resources\film.m4ByH84cvs.jpg" />
+    <None Include="Resources\movie-genres-vector-icons-free-28686.jpg" />
+    <None Include="Resources\monsters-vs-aliens-20090313111252881_640w.jpg" />
     <Content Include="SQLQuery1.sql" />
   </ItemGroup>
   <ItemGroup>

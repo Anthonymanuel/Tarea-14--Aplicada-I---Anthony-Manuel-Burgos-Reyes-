@@ -32,6 +32,9 @@
             this.peliculaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.registrarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.consultarToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.generoToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.actorToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.estudioToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -49,7 +52,10 @@
             // 
             this.peliculaToolStripMenuItem.DropDownItems.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.registrarToolStripMenuItem,
-            this.consultarToolStripMenuItem});
+            this.consultarToolStripMenuItem,
+            this.generoToolStripMenuItem,
+            this.actorToolStripMenuItem,
+            this.estudioToolStripMenuItem});
             this.peliculaToolStripMenuItem.Name = "peliculaToolStripMenuItem";
             this.peliculaToolStripMenuItem.Size = new System.Drawing.Size(60, 20);
             this.peliculaToolStripMenuItem.Text = "Pelicula";
@@ -57,16 +63,37 @@
             // registrarToolStripMenuItem
             // 
             this.registrarToolStripMenuItem.Name = "registrarToolStripMenuItem";
-            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.registrarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.registrarToolStripMenuItem.Text = "Registrar";
             this.registrarToolStripMenuItem.Click += new System.EventHandler(this.registrarToolStripMenuItem_Click);
             // 
             // consultarToolStripMenuItem
             // 
             this.consultarToolStripMenuItem.Name = "consultarToolStripMenuItem";
-            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(125, 22);
+            this.consultarToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
             this.consultarToolStripMenuItem.Text = "Consultar";
             this.consultarToolStripMenuItem.Click += new System.EventHandler(this.consultarToolStripMenuItem_Click);
+            // 
+            // generoToolStripMenuItem
+            // 
+            this.generoToolStripMenuItem.Name = "generoToolStripMenuItem";
+            this.generoToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.generoToolStripMenuItem.Text = "Genero";
+            this.generoToolStripMenuItem.Click += new System.EventHandler(this.generoToolStripMenuItem_Click);
+            // 
+            // actorToolStripMenuItem
+            // 
+            this.actorToolStripMenuItem.Name = "actorToolStripMenuItem";
+            this.actorToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.actorToolStripMenuItem.Text = "Actor";
+            this.actorToolStripMenuItem.Click += new System.EventHandler(this.actorToolStripMenuItem_Click);
+            // 
+            // estudioToolStripMenuItem
+            // 
+            this.estudioToolStripMenuItem.Name = "estudioToolStripMenuItem";
+            this.estudioToolStripMenuItem.Size = new System.Drawing.Size(152, 22);
+            this.estudioToolStripMenuItem.Text = "Estudio";
+            this.estudioToolStripMenuItem.Click += new System.EventHandler(this.estudioToolStripMenuItem_Click);
             // 
             // Registro
             // 
@@ -91,6 +118,9 @@
         private System.Windows.Forms.ToolStripMenuItem peliculaToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem registrarToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem consultarToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem generoToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem actorToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem estudioToolStripMenuItem;
     }
 }
 

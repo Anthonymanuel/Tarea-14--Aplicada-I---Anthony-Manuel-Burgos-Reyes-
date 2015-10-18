@@ -203,6 +203,126 @@ namespace RegistroPelicula.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap _1444959786_edit_clear {
+            get {
+                object obj = ResourceManager.GetObject("1444959786_edit-clear", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1444960319_Actor_Male_Light {
+            get {
+                object obj = ResourceManager.GetObject("1444960319_Actor_Male_Light", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1444960611_Movies___Oscar {
+            get {
+                object obj = ResourceManager.GetObject("1444960611_Movies_-_Oscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1444960685_Movies___Oscar {
+            get {
+                object obj = ResourceManager.GetObject("1444960685_Movies_-_Oscar", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1444961210_Movie_Studio_Android_R {
+            get {
+                object obj = ResourceManager.GetObject("1444961210_Movie_Studio-Android-R", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1445133201_actor {
+            get {
+                object obj = ResourceManager.GetObject("1445133201_actor", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1445133316_video_x_generic {
+            get {
+                object obj = ResourceManager.GetObject("1445133316_video-x-generic", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _1445133441_film_clip_movie_timestamp {
+            get {
+                object obj = ResourceManager.GetObject("1445133441_film_clip_movie_timestamp", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap _7207407_cartel_de_la_pelicula_de_cine_generos_vintage_background {
+            get {
+                object obj = ResourceManager.GetObject("7207407-cartel-de-la-pelicula-de-cine-generos-vintage-background", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap film_m4ByH84cvs {
+            get {
+                object obj = ResourceManager.GetObject("film.m4ByH84cvs", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap monsters_vs_aliens_20090313111252881_640w {
+            get {
+                object obj = ResourceManager.GetObject("monsters-vs-aliens-20090313111252881_640w", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap movie_genres_vector_icons_free_28686 {
+            get {
+                object obj = ResourceManager.GetObject("movie-genres-vector-icons-free-28686", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap result {
             get {
                 object obj = ResourceManager.GetObject("result", resourceCulture);
@@ -216,6 +336,16 @@ namespace RegistroPelicula.Properties {
         internal static System.Drawing.Bitmap rollo_de_pelicula {
             get {
                 object obj = ResourceManager.GetObject("rollo-de-pelicula", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap sistema_del_negro_de_los_iconos_de_los_géneros_de_la_película_54879374 {
+            get {
+                object obj = ResourceManager.GetObject("sistema-del-negro-de-los-iconos-de-los-géneros-de-la-película-54879374", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

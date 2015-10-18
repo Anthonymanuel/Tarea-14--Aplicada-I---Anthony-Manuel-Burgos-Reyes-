@@ -1,6 +1,6 @@
 ﻿namespace RegistroPelicula
 {
-    partial class RegistroForm
+    partial class RegistroPelicula
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(RegistroPelicula));
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
@@ -52,6 +52,21 @@
             this.SeleccionarVideoButton = new System.Windows.Forms.Button();
             this.PeliculaGroupBox = new System.Windows.Forms.GroupBox();
             this.CategoriaIdComboBox = new System.Windows.Forms.ComboBox();
+            this.label9 = new System.Windows.Forms.Label();
+            this.GeneroComboBox = new System.Windows.Forms.ComboBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.ActorComboBox = new System.Windows.Forms.ComboBox();
+            this.SeleccionButton = new System.Windows.Forms.Button();
+            this.SeleccionaButton = new System.Windows.Forms.Button();
+            this.GeneroListView = new System.Windows.Forms.ListView();
+            this.GeneroColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
+            this.ActorListView = new System.Windows.Forms.ListView();
+            this.label11 = new System.Windows.Forms.Label();
+            this.EstudioComboBox = new System.Windows.Forms.ComboBox();
+            this.Seleccionar1Button = new System.Windows.Forms.Button();
+            this.label12 = new System.Windows.Forms.Label();
+            this.EstudioTextBox = new System.Windows.Forms.TextBox();
+            this.ActorColumnHeader = ((System.Windows.Forms.ColumnHeader)(new System.Windows.Forms.ColumnHeader()));
             ((System.ComponentModel.ISupportInitialize)(this.FotoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReproductorAxWindowsMediaPlayer1)).BeginInit();
             this.PeliculaGroupBox.SuspendLayout();
@@ -78,7 +93,7 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(12, 101);
+            this.label3.Location = new System.Drawing.Point(12, 104);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(26, 13);
             this.label3.TabIndex = 2;
@@ -87,7 +102,7 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(12, 160);
+            this.label4.Location = new System.Drawing.Point(12, 163);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(34, 13);
             this.label4.TabIndex = 3;
@@ -96,7 +111,7 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(12, 194);
+            this.label5.Location = new System.Drawing.Point(12, 197);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(66, 13);
             this.label5.TabIndex = 4;
@@ -106,34 +121,34 @@
             // 
             this.TituloTextBox.Location = new System.Drawing.Point(126, 35);
             this.TituloTextBox.Name = "TituloTextBox";
-            this.TituloTextBox.Size = new System.Drawing.Size(100, 20);
+            this.TituloTextBox.Size = new System.Drawing.Size(118, 20);
             this.TituloTextBox.TabIndex = 1;
             // 
             // DescripcionTextBox
             // 
             this.DescripcionTextBox.Location = new System.Drawing.Point(126, 68);
             this.DescripcionTextBox.Name = "DescripcionTextBox";
-            this.DescripcionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.DescripcionTextBox.Size = new System.Drawing.Size(118, 20);
             this.DescripcionTextBox.TabIndex = 2;
             // 
             // AnoTextBox
             // 
-            this.AnoTextBox.Location = new System.Drawing.Point(126, 98);
+            this.AnoTextBox.Location = new System.Drawing.Point(126, 101);
             this.AnoTextBox.Name = "AnoTextBox";
-            this.AnoTextBox.Size = new System.Drawing.Size(100, 20);
+            this.AnoTextBox.Size = new System.Drawing.Size(118, 20);
             this.AnoTextBox.TabIndex = 3;
             // 
             // IMDBTextBox
             // 
-            this.IMDBTextBox.Location = new System.Drawing.Point(126, 157);
+            this.IMDBTextBox.Location = new System.Drawing.Point(126, 160);
             this.IMDBTextBox.Name = "IMDBTextBox";
-            this.IMDBTextBox.Size = new System.Drawing.Size(100, 20);
+            this.IMDBTextBox.Size = new System.Drawing.Size(118, 20);
             this.IMDBTextBox.TabIndex = 5;
             // 
             // label6
             // 
             this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(12, 130);
+            this.label6.Location = new System.Drawing.Point(12, 133);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(61, 13);
             this.label6.TabIndex = 7;
@@ -141,16 +156,16 @@
             // 
             // CalificacionTextBox
             // 
-            this.CalificacionTextBox.Location = new System.Drawing.Point(126, 127);
+            this.CalificacionTextBox.Location = new System.Drawing.Point(126, 130);
             this.CalificacionTextBox.Name = "CalificacionTextBox";
-            this.CalificacionTextBox.Size = new System.Drawing.Size(100, 20);
+            this.CalificacionTextBox.Size = new System.Drawing.Size(118, 20);
             this.CalificacionTextBox.TabIndex = 4;
             // 
             // EliminarButton
             // 
             this.EliminarButton.Image = global::RegistroPelicula.Properties.Resources._1443950518_Remove;
             this.EliminarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.EliminarButton.Location = new System.Drawing.Point(211, 229);
+            this.EliminarButton.Location = new System.Drawing.Point(224, 443);
             this.EliminarButton.Name = "EliminarButton";
             this.EliminarButton.Size = new System.Drawing.Size(79, 33);
             this.EliminarButton.TabIndex = 9;
@@ -161,9 +176,9 @@
             // 
             // NuevoButton
             // 
-            this.NuevoButton.Image = global::RegistroPelicula.Properties.Resources._1444509101_document_new;
+            this.NuevoButton.Image = global::RegistroPelicula.Properties.Resources._1444959786_edit_clear;
             this.NuevoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.NuevoButton.Location = new System.Drawing.Point(42, 229);
+            this.NuevoButton.Location = new System.Drawing.Point(55, 443);
             this.NuevoButton.Name = "NuevoButton";
             this.NuevoButton.Size = new System.Drawing.Size(75, 33);
             this.NuevoButton.TabIndex = 7;
@@ -176,7 +191,7 @@
             // 
             this.GuardarButton.Image = global::RegistroPelicula.Properties.Resources._1444509221_Save_as;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.GuardarButton.Location = new System.Drawing.Point(123, 229);
+            this.GuardarButton.Location = new System.Drawing.Point(136, 443);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(82, 33);
             this.GuardarButton.TabIndex = 8;
@@ -198,13 +213,13 @@
             // 
             this.PeliculaIdTextBox.Location = new System.Drawing.Point(126, 6);
             this.PeliculaIdTextBox.Name = "PeliculaIdTextBox";
-            this.PeliculaIdTextBox.Size = new System.Drawing.Size(100, 20);
+            this.PeliculaIdTextBox.Size = new System.Drawing.Size(118, 20);
             this.PeliculaIdTextBox.TabIndex = 0;
             // 
             // label8
             // 
             this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(248, 9);
+            this.label8.Location = new System.Drawing.Point(274, 13);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(42, 13);
             this.label8.TabIndex = 12;
@@ -214,7 +229,7 @@
             // 
             this.SeleccionarButton.Image = global::RegistroPelicula.Properties.Resources._1444678362_editor_image_picture_photo;
             this.SeleccionarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SeleccionarButton.Location = new System.Drawing.Point(296, 184);
+            this.SeleccionarButton.Location = new System.Drawing.Point(347, 184);
             this.SeleccionarButton.Name = "SeleccionarButton";
             this.SeleccionarButton.Size = new System.Drawing.Size(95, 39);
             this.SeleccionarButton.TabIndex = 14;
@@ -225,7 +240,7 @@
             // 
             // FotoPictureBox
             // 
-            this.FotoPictureBox.Location = new System.Drawing.Point(296, 12);
+            this.FotoPictureBox.Location = new System.Drawing.Point(322, 16);
             this.FotoPictureBox.Name = "FotoPictureBox";
             this.FotoPictureBox.Size = new System.Drawing.Size(145, 165);
             this.FotoPictureBox.TabIndex = 15;
@@ -244,7 +259,7 @@
             // 
             this.SeleccionarVideoButton.Image = global::RegistroPelicula.Properties.Resources._1444678385_video;
             this.SeleccionarVideoButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.SeleccionarVideoButton.Location = new System.Drawing.Point(447, 184);
+            this.SeleccionarVideoButton.Location = new System.Drawing.Point(580, 184);
             this.SeleccionarVideoButton.Name = "SeleccionarVideoButton";
             this.SeleccionarVideoButton.Size = new System.Drawing.Size(90, 39);
             this.SeleccionarVideoButton.TabIndex = 17;
@@ -256,7 +271,7 @@
             // PeliculaGroupBox
             // 
             this.PeliculaGroupBox.Controls.Add(this.ReproductorAxWindowsMediaPlayer1);
-            this.PeliculaGroupBox.Location = new System.Drawing.Point(447, 18);
+            this.PeliculaGroupBox.Location = new System.Drawing.Point(473, 22);
             this.PeliculaGroupBox.Name = "PeliculaGroupBox";
             this.PeliculaGroupBox.Size = new System.Drawing.Size(292, 159);
             this.PeliculaGroupBox.TabIndex = 18;
@@ -278,19 +293,176 @@
             "8",
             "9",
             "10"});
-            this.CategoriaIdComboBox.Location = new System.Drawing.Point(126, 191);
+            this.CategoriaIdComboBox.Location = new System.Drawing.Point(126, 194);
             this.CategoriaIdComboBox.Name = "CategoriaIdComboBox";
-            this.CategoriaIdComboBox.Size = new System.Drawing.Size(121, 21);
+            this.CategoriaIdComboBox.Size = new System.Drawing.Size(118, 21);
             this.CategoriaIdComboBox.TabIndex = 19;
             // 
-            // RegistroForm
+            // label9
+            // 
+            this.label9.AutoSize = true;
+            this.label9.Location = new System.Drawing.Point(12, 254);
+            this.label9.Name = "label9";
+            this.label9.Size = new System.Drawing.Size(42, 13);
+            this.label9.TabIndex = 20;
+            this.label9.Text = "Genero";
+            // 
+            // GeneroComboBox
+            // 
+            this.GeneroComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GeneroComboBox.FormattingEnabled = true;
+            this.GeneroComboBox.Location = new System.Drawing.Point(126, 251);
+            this.GeneroComboBox.Name = "GeneroComboBox";
+            this.GeneroComboBox.Size = new System.Drawing.Size(118, 21);
+            this.GeneroComboBox.TabIndex = 22;
+            this.GeneroComboBox.SelectedIndexChanged += new System.EventHandler(this.GeneroComboBox_SelectedIndexChanged);
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Location = new System.Drawing.Point(294, 254);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(32, 13);
+            this.label10.TabIndex = 25;
+            this.label10.Text = "Actor";
+            // 
+            // ActorComboBox
+            // 
+            this.ActorComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.ActorComboBox.FormattingEnabled = true;
+            this.ActorComboBox.Location = new System.Drawing.Point(347, 251);
+            this.ActorComboBox.Name = "ActorComboBox";
+            this.ActorComboBox.Size = new System.Drawing.Size(121, 21);
+            this.ActorComboBox.TabIndex = 26;
+            this.ActorComboBox.SelectedIndexChanged += new System.EventHandler(this.ActorComboBox_SelectedIndexChanged);
+            // 
+            // SeleccionButton
+            // 
+            this.SeleccionButton.Image = global::RegistroPelicula.Properties.Resources._1445133316_video_x_generic;
+            this.SeleccionButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SeleccionButton.Location = new System.Drawing.Point(126, 392);
+            this.SeleccionButton.Name = "SeleccionButton";
+            this.SeleccionButton.Size = new System.Drawing.Size(102, 40);
+            this.SeleccionButton.TabIndex = 23;
+            this.SeleccionButton.Text = "Seleccionar";
+            this.SeleccionButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SeleccionButton.UseVisualStyleBackColor = true;
+            this.SeleccionButton.Click += new System.EventHandler(this.SeleccionButton_Click);
+            // 
+            // SeleccionaButton
+            // 
+            this.SeleccionaButton.Image = global::RegistroPelicula.Properties.Resources._1445133201_actor;
+            this.SeleccionaButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.SeleccionaButton.Location = new System.Drawing.Point(356, 392);
+            this.SeleccionaButton.Name = "SeleccionaButton";
+            this.SeleccionaButton.Size = new System.Drawing.Size(102, 40);
+            this.SeleccionaButton.TabIndex = 28;
+            this.SeleccionaButton.Text = "Seleccionar";
+            this.SeleccionaButton.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.SeleccionaButton.UseVisualStyleBackColor = true;
+            this.SeleccionaButton.Click += new System.EventHandler(this.SeleccionaButton_Click);
+            // 
+            // GeneroListView
+            // 
+            this.GeneroListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.GeneroColumnHeader});
+            this.GeneroListView.Location = new System.Drawing.Point(126, 289);
+            this.GeneroListView.Name = "GeneroListView";
+            this.GeneroListView.Size = new System.Drawing.Size(118, 97);
+            this.GeneroListView.TabIndex = 30;
+            this.GeneroListView.UseCompatibleStateImageBehavior = false;
+            this.GeneroListView.View = System.Windows.Forms.View.Details;
+            // 
+            // GeneroColumnHeader
+            // 
+            this.GeneroColumnHeader.Text = "Genero";
+            this.GeneroColumnHeader.Width = 80;
+            // 
+            // ActorListView
+            // 
+            this.ActorListView.Columns.AddRange(new System.Windows.Forms.ColumnHeader[] {
+            this.ActorColumnHeader});
+            this.ActorListView.Location = new System.Drawing.Point(347, 289);
+            this.ActorListView.Name = "ActorListView";
+            this.ActorListView.Size = new System.Drawing.Size(121, 97);
+            this.ActorListView.TabIndex = 31;
+            this.ActorListView.UseCompatibleStateImageBehavior = false;
+            this.ActorListView.View = System.Windows.Forms.View.Details;
+            // 
+            // label11
+            // 
+            this.label11.AutoSize = true;
+            this.label11.Location = new System.Drawing.Point(505, 254);
+            this.label11.Name = "label11";
+            this.label11.Size = new System.Drawing.Size(42, 13);
+            this.label11.TabIndex = 32;
+            this.label11.Text = "Estudio";
+            // 
+            // EstudioComboBox
+            // 
+            this.EstudioComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.EstudioComboBox.FormattingEnabled = true;
+            this.EstudioComboBox.Location = new System.Drawing.Point(569, 251);
+            this.EstudioComboBox.Name = "EstudioComboBox";
+            this.EstudioComboBox.Size = new System.Drawing.Size(121, 21);
+            this.EstudioComboBox.TabIndex = 33;
+            this.EstudioComboBox.SelectedIndexChanged += new System.EventHandler(this.EstudioComboBox_SelectedIndexChanged);
+            // 
+            // Seleccionar1Button
+            // 
+            this.Seleccionar1Button.Image = global::RegistroPelicula.Properties.Resources._1445133441_film_clip_movie_timestamp;
+            this.Seleccionar1Button.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.Seleccionar1Button.Location = new System.Drawing.Point(580, 278);
+            this.Seleccionar1Button.Name = "Seleccionar1Button";
+            this.Seleccionar1Button.Size = new System.Drawing.Size(101, 44);
+            this.Seleccionar1Button.TabIndex = 34;
+            this.Seleccionar1Button.Text = "Seleccionar";
+            this.Seleccionar1Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.Seleccionar1Button.UseVisualStyleBackColor = true;
+            this.Seleccionar1Button.Click += new System.EventHandler(this.Seleccionar1Button_Click);
+            // 
+            // label12
+            // 
+            this.label12.AutoSize = true;
+            this.label12.Location = new System.Drawing.Point(13, 224);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(42, 13);
+            this.label12.TabIndex = 35;
+            this.label12.Text = "Estudio";
+            // 
+            // EstudioTextBox
+            // 
+            this.EstudioTextBox.Location = new System.Drawing.Point(126, 221);
+            this.EstudioTextBox.Name = "EstudioTextBox";
+            this.EstudioTextBox.ReadOnly = true;
+            this.EstudioTextBox.Size = new System.Drawing.Size(118, 20);
+            this.EstudioTextBox.TabIndex = 36;
+            // 
+            // ActorColumnHeader
+            // 
+            this.ActorColumnHeader.Text = "Actores";
+            // 
+            // RegistroPelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.AutoSizeMode = System.Windows.Forms.AutoSizeMode.GrowAndShrink;
             this.AutoValidate = System.Windows.Forms.AutoValidate.Disable;
             this.BackgroundImage = global::RegistroPelicula.Properties.Resources.result;
-            this.ClientSize = new System.Drawing.Size(772, 278);
+            this.ClientSize = new System.Drawing.Size(769, 488);
+            this.Controls.Add(this.EstudioTextBox);
+            this.Controls.Add(this.label12);
+            this.Controls.Add(this.Seleccionar1Button);
+            this.Controls.Add(this.EstudioComboBox);
+            this.Controls.Add(this.label11);
+            this.Controls.Add(this.ActorListView);
+            this.Controls.Add(this.GeneroListView);
+            this.Controls.Add(this.SeleccionaButton);
+            this.Controls.Add(this.ActorComboBox);
+            this.Controls.Add(this.label10);
+            this.Controls.Add(this.SeleccionButton);
+            this.Controls.Add(this.GeneroComboBox);
+            this.Controls.Add(this.label9);
             this.Controls.Add(this.CategoriaIdComboBox);
             this.Controls.Add(this.PeliculaGroupBox);
             this.Controls.Add(this.SeleccionarVideoButton);
@@ -313,8 +485,9 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Name = "RegistroForm";
+            this.Name = "RegistroPelicula";
             this.Text = "Registrar";
+            this.Load += new System.EventHandler(this.RegistroPelicula_Load);
             ((System.ComponentModel.ISupportInitialize)(this.FotoPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ReproductorAxWindowsMediaPlayer1)).EndInit();
             this.PeliculaGroupBox.ResumeLayout(false);
@@ -348,5 +521,20 @@
         private System.Windows.Forms.Button SeleccionarVideoButton;
         private System.Windows.Forms.GroupBox PeliculaGroupBox;
         private System.Windows.Forms.ComboBox CategoriaIdComboBox;
+        private System.Windows.Forms.Label label9;
+        private System.Windows.Forms.ComboBox GeneroComboBox;
+        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.ComboBox ActorComboBox;
+        private System.Windows.Forms.Button SeleccionButton;
+        private System.Windows.Forms.Button SeleccionaButton;
+        private System.Windows.Forms.ListView GeneroListView;
+        private System.Windows.Forms.ListView ActorListView;
+        private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox EstudioComboBox;
+        private System.Windows.Forms.Button Seleccionar1Button;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.TextBox EstudioTextBox;
+        private System.Windows.Forms.ColumnHeader GeneroColumnHeader;
+        private System.Windows.Forms.ColumnHeader ActorColumnHeader;
     }
 }

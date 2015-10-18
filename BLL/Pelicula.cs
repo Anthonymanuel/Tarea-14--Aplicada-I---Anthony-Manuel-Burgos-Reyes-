@@ -25,6 +25,9 @@ namespace BLL
         public int categoriaId { get; set; }
         public string Direccion { get; set; }
         public string Video { get; set; }
+        public string Genero { get; set; }
+        public string Actor { get; set; }
+        public string Estudio { get; set; }
 
         public Pelicula()
         {
@@ -36,7 +39,9 @@ namespace BLL
             this.categoriaId = 0;
             this.Direccion = "";
             this.Video = "";
-
+            this.Genero = "";
+            this.Actor = "";
+            this.Estudio = "";
         }
         ConexionBaseD conexion = new ConexionBaseD();
         /// <summary>
@@ -46,7 +51,7 @@ namespace BLL
         public override bool Insertar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("insert into Pelicula(Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}')", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId,this.Direccion,this.Video));
+            conexion.Ejecutar(String.Format("insert into Pelicula(Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId,this.Direccion,this.Video,this.Genero,this.Actor,this.Estudio));
             return retorno;
         }
         /// <summary>
@@ -56,7 +61,7 @@ namespace BLL
         public override bool Editar()
         { 
             bool retorno = false;
-            conexion.Ejecutar(String.Format("update Pelicula set Titulo = '{0}',Descripcion='{1}',Ano ='{2}',Calificacion='{3}',IMBD='{4}',CategoriaId='{5}',Foto='{6}',Video='{7}' where PeliculaId='{6}'", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId, this.Direccion,this.Video,this.PeliculaId));
+            conexion.Ejecutar(String.Format("update Pelicula set Titulo = '{0}',Descripcion='{1}',Ano ='{2}',Calificacion='{3}',IMBD='{4}',CategoriaId='{5}',Foto='{6}',Video='{7}',Genero= '{8}',Actor= '{9}',Estudio= '{10}' where PeliculaId='{11}'", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId, this.Direccion,this.Video,this.Genero,this.Actor,this.Estudio,this.PeliculaId));
             return retorno;
         }
         /// <summary>
@@ -67,7 +72,7 @@ namespace BLL
         public override bool Eliminar()
         {
             bool retorno = false;
-            conexion.getDatos(String.Format("delete  from Pelicula where PeliculaId={0}", this.PeliculaId));
+            conexion.ObtenerDatos((String.Format("delete  from Pelicula where PeliculaId='{0}'", this.PeliculaId)));
             return retorno;
         }
         /// <summary>
@@ -78,7 +83,7 @@ namespace BLL
         {
             DataTable dt = new DataTable();
 
-            dt = conexion.getDatos(String.Format("select  PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video from Pelicula where PeliculaId={0}", IdBuscado));
+            dt = conexion.ObtenerDatos(String.Format("select  PeliculaId,Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video from Pelicula where PeliculaId='{0}'", IdBuscado));
             if (dt.Rows.Count > 0)
             {
                 this.PeliculaId = (int)dt.Rows[0]["PeliculaId"];
@@ -90,15 +95,23 @@ namespace BLL
                 this.categoriaId = (int)dt.Rows[0]["CategoriaId"];
                 this.Direccion = dt.Rows[0]["Foto"].ToString();
                 this.Video= dt.Rows[0]["Video"].ToString();
+                this.Genero = dt.Rows[0]["Genero"].ToString();
+                this.Actor = dt.Rows[0]["Actor"].ToString();
+                this.Estudio = dt.Rows[0]["Estudio"].ToString();
             }
 
             return dt.Rows.Count  >0;
         }
 
-       
-        public override DataTable Listado(string Campos, string Condicion)
+
+        public override DataTable Listado(string Campos, string Condicion, string Orden)
         {
-            return conexion.getDatos("Select" + Campos + " from Pelicula where " + Condicion);
+            string ordenFinal = ""; //!orden.Equals("") ? " orden by  " + orden : "";
+            if (!Orden.Equals(""))
+                ordenFinal = " orden by  " + Orden;
+
+            return conexion.ObtenerDatos(("Select " + Campos +
+                " from Pelicula where " + Condicion + ordenFinal));
         }
     }
 }

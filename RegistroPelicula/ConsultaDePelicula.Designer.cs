@@ -1,6 +1,6 @@
 ﻿namespace RegistroPelicula
 {
-    partial class ConsultaForm
+    partial class ConsultaDePelicula
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaForm));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ConsultaDePelicula));
             this.PeliculaIdTextBox = new System.Windows.Forms.TextBox();
             this.MostrarDataGridView = new System.Windows.Forms.DataGridView();
             this.BuscarButton = new System.Windows.Forms.Button();
@@ -59,7 +59,7 @@
             this.MostrarDataGridView.Location = new System.Drawing.Point(12, 138);
             this.MostrarDataGridView.Name = "MostrarDataGridView";
             this.MostrarDataGridView.ReadOnly = true;
-            this.MostrarDataGridView.Size = new System.Drawing.Size(637, 111);
+            this.MostrarDataGridView.Size = new System.Drawing.Size(806, 111);
             this.MostrarDataGridView.TabIndex = 2;
             // 
             // BuscarButton
@@ -94,7 +94,7 @@
             // 
             // FotoPictureBox
             // 
-            this.FotoPictureBox.Location = new System.Drawing.Point(655, 138);
+            this.FotoPictureBox.Location = new System.Drawing.Point(40, 298);
             this.FotoPictureBox.Name = "FotoPictureBox";
             this.FotoPictureBox.Size = new System.Drawing.Size(100, 111);
             this.FotoPictureBox.TabIndex = 4;
@@ -103,7 +103,7 @@
             // PeliculaGroupBox
             // 
             this.PeliculaGroupBox.Controls.Add(this.ReproductorAxWindowsMediaPlayer1);
-            this.PeliculaGroupBox.Location = new System.Drawing.Point(12, 265);
+            this.PeliculaGroupBox.Location = new System.Drawing.Point(187, 265);
             this.PeliculaGroupBox.Name = "PeliculaGroupBox";
             this.PeliculaGroupBox.Size = new System.Drawing.Size(637, 189);
             this.PeliculaGroupBox.TabIndex = 5;
@@ -123,7 +123,7 @@
             // 
             this.PauseButton.Image = global::RegistroPelicula.Properties.Resources._1444677738_ic_pause_48px;
             this.PauseButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.PauseButton.Location = new System.Drawing.Point(167, 460);
+            this.PauseButton.Location = new System.Drawing.Point(280, 461);
             this.PauseButton.Name = "PauseButton";
             this.PauseButton.Size = new System.Drawing.Size(64, 32);
             this.PauseButton.TabIndex = 18;
@@ -136,7 +136,7 @@
             // 
             this.StopButton.Image = global::RegistroPelicula.Properties.Resources._1444677751_24_Stop;
             this.StopButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.StopButton.Location = new System.Drawing.Point(237, 460);
+            this.StopButton.Location = new System.Drawing.Point(350, 461);
             this.StopButton.Name = "StopButton";
             this.StopButton.Size = new System.Drawing.Size(60, 32);
             this.StopButton.TabIndex = 19;
@@ -149,7 +149,7 @@
             // 
             this.PlayButton.Image = global::RegistroPelicula.Properties.Resources._1444677721_ic_play_arrow_48px;
             this.PlayButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.PlayButton.Location = new System.Drawing.Point(105, 459);
+            this.PlayButton.Location = new System.Drawing.Point(218, 460);
             this.PlayButton.Name = "PlayButton";
             this.PlayButton.Size = new System.Drawing.Size(56, 33);
             this.PlayButton.TabIndex = 20;
@@ -158,7 +158,7 @@
             this.PlayButton.UseVisualStyleBackColor = true;
             this.PlayButton.Click += new System.EventHandler(this.PlayButton_Click);
             // 
-            // ConsultaForm
+            // ConsultaDePelicula
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -173,7 +173,7 @@
             this.Controls.Add(this.BuscarButton);
             this.Controls.Add(this.MostrarDataGridView);
             this.Controls.Add(this.PeliculaIdTextBox);
-            this.Name = "ConsultaForm";
+            this.Name = "ConsultaDePelicula";
             this.Text = "Consulta";
             this.Load += new System.EventHandler(this.ConsultaForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.MostrarDataGridView)).EndInit();
