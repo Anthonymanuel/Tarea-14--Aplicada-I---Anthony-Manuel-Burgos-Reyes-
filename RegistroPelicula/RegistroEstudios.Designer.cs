@@ -86,7 +86,7 @@
             // 
             this.GuardarButton.Image = global::RegistroPelicula.Properties.Resources._1444509221_Save_as;
             this.GuardarButton.ImageAlign = System.Drawing.ContentAlignment.MiddleRight;
-            this.GuardarButton.Location = new System.Drawing.Point(175, 231);
+            this.GuardarButton.Location = new System.Drawing.Point(175, 232);
             this.GuardarButton.Name = "GuardarButton";
             this.GuardarButton.Size = new System.Drawing.Size(85, 43);
             this.GuardarButton.TabIndex = 20;
