@@ -1,4 +1,4 @@
-create database Pelicula
+Create database Pelicula
 use Pelicula
 
 create table Pelicula(
@@ -10,9 +10,13 @@ Calificacion int,
 IMBD int ,
 CategoriaId int,
 Foto varchar(200),
-Video varchar(200)
+Video varchar(200),
+Genero varchar(300),
+Actor varchar(300),
+Estudio Varchar(100)
 
 )
+
 Create table Generos(
 GeneroId int identity(1,1) primary key,
 Descripcion  varchar(60)

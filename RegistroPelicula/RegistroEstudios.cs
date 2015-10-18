@@ -23,14 +23,14 @@ namespace RegistroPelicula
         {
             if (EstudioIdTextBox.Text.Length == 0)
             {
-                mensaje = "Se ha guardado el Actor";
-                mensajeEditar = "Error Actor ID incorecto";
+                mensaje = "Se ha guardado el Estudio";
+                mensajeEditar = "Error Estudio ID incorecto";
                 return 0;
             }
             else
             {
-                mensajeEditar = "El Actor se ha eliminado";
-                mensaje = "Se ha editado el Actor";
+                mensajeEditar = "El Estudio se ha eliminado";
+                mensaje = "Se ha Estudio el Actor";
                 return 1;
             }
         }
