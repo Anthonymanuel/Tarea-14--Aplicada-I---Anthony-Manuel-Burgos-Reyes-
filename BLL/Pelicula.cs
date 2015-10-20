@@ -25,6 +25,9 @@ namespace BLL
         public int categoriaId { get; set; }
         public string Direccion { get; set; }
         public string Video { get; set; }
+        public string Genero { get; set; }
+        public string Actor { get; set; }
+        public string Estudio { get; set; }
         
         public List <Actores> Actor{get; set;}
         public Pelicula()
