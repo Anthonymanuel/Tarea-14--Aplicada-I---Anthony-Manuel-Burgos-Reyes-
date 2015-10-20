@@ -25,10 +25,8 @@ namespace BLL
         public int categoriaId { get; set; }
         public string Direccion { get; set; }
         public string Video { get; set; }
-        public string Genero { get; set; }
-        public string Actor { get; set; }
-        public string Estudio { get; set; }
-
+        
+        public List <Actores> Actor{get; set;}
         public Pelicula()
         {
             this.Titulo = "";
@@ -42,6 +40,11 @@ namespace BLL
             this.Genero = "";
             this.Actor = "";
             this.Estudio = "";
+            Actor = new List<Actores>();
+        }
+         public void AgregarActor(int ActorId, String Nombre)
+        {
+            this.Actor.Add(new Actores(ActorId,Nombre);
         }
         ConexionBaseD conexion = new ConexionBaseD();
         /// <summary>
@@ -75,6 +78,7 @@ namespace BLL
             conexion.ObtenerDatos((String.Format("delete  from Pelicula where PeliculaId='{0}'", this.PeliculaId)));
             return retorno;
         }
+       
         /// <summary>
         /// Para Buscar elemento de una tabla de una base de datos
         /// </summary>
