@@ -28,8 +28,7 @@ namespace BLL
         public string Genero { get; set; }
         public string Actor { get; set; }
         public string Estudio { get; set; }
-        
-        public List <Actores> Actor{get; set;}
+        public List <Actores> Actor1{get; set;}
         public Pelicula()
         {
             this.Titulo = "";
@@ -43,11 +42,11 @@ namespace BLL
             this.Genero = "";
             this.Actor = "";
             this.Estudio = "";
-            Actor = new List<Actores>();
+            Actor1 = new List<Actores>();
         }
          public void AgregarActor(int ActorId, String Nombre)
         {
-            this.Actor.Add(new Actores(ActorId,Nombre);
+            this.Actor1.Add(new Actores(ActorId,Nombre));
         }
         ConexionBaseD conexion = new ConexionBaseD();
         /// <summary>
@@ -57,7 +56,15 @@ namespace BLL
         public override bool Insertar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("insert into Pelicula(Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId,this.Direccion,this.Video,this.Genero,this.Actor,this.Estudio));
+           retorno =  conexion.Ejecutar(String.Format("insert into Pelicula(Titulo,Descripcion,Ano,Calificacion,IMBD, CategoriaId,Foto,Video,Genero,Actor,Estudio) values('{0}','{1}','{2}','{3}','{4}','{5}','{6}','{7}','{8}','{9}','{10}')", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId,this.Direccion,this.Video,this.Genero,this.Actor,this.Estudio));
+            if (retorno)
+            {
+                //this.PeliculaId = (int)conexion.
+                foreach (var autor in this.Actor1)
+                {
+
+                }
+            }
             return retorno;
         }
         /// <summary>
@@ -67,7 +74,7 @@ namespace BLL
         public override bool Editar()
         { 
             bool retorno = false;
-            conexion.Ejecutar(String.Format("update Pelicula set Titulo = '{0}',Descripcion='{1}',Ano ='{2}',Calificacion='{3}',IMBD='{4}',CategoriaId='{5}',Foto='{6}',Video='{7}',Genero= '{8}',Actor= '{9}',Estudio= '{10}' where PeliculaId='{11}'", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId, this.Direccion,this.Video,this.Genero,this.Actor,this.Estudio,this.PeliculaId));
+            retorno =  conexion.Ejecutar(String.Format("update Pelicula set Titulo = '{0}',Descripcion='{1}',Ano ='{2}',Calificacion='{3}',IMBD='{4}',CategoriaId='{5}',Foto='{6}',Video='{7}',Genero= '{8}',Actor= '{9}',Estudio= '{10}' where PeliculaId='{11}'", this.Titulo, this.Descripcion, this.Ano, this.Calificacion, this.Imbd, this.categoriaId, this.Direccion,this.Video,this.Genero,this.Actor,this.Estudio,this.PeliculaId));
             return retorno;
         }
         /// <summary>
@@ -78,7 +85,7 @@ namespace BLL
         public override bool Eliminar()
         {
             bool retorno = false;
-            conexion.ObtenerDatos((String.Format("delete  from Pelicula where PeliculaId='{0}'", this.PeliculaId)));
+            retorno = conexion.Ejecutar((String.Format("delete  from Pelicula where PeliculaId='{0}'", this.PeliculaId)));
             return retorno;
         }
        

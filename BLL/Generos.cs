@@ -29,22 +29,23 @@ namespace BLL
         public override bool Insertar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("Insert into Generos (Descripcion) values ('{0}')", this.Descripcion));
+            retorno = conexion.Ejecutar(String.Format("Insert into Generos (Descripcion) values ('{0}')", this.Descripcion));
             return retorno;
         }
 
         public override bool Editar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("update Generos set Descripcion = '{0}' where GeneroId = '{1}'", this.Descripcion, this.GeneroId));
+            retorno =  conexion.Ejecutar(String.Format("update Generos set Descripcion = '{0}' where GeneroId = '{1}'", this.Descripcion, this.GeneroId));
             return retorno;
         }
 
         public override bool Eliminar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("Delete Generos where GeneroId ='{0}'", this.GeneroId));
+            retorno = conexion.Ejecutar(String.Format("Delete Generos where GeneroId ='{0}'", this.GeneroId));
             return retorno;
+
         }
 
         public override bool Buscar(int idBuscado)

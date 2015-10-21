@@ -26,23 +26,24 @@ namespace BLL
         public override bool Insertar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("Insert Into Estudios (NombreEstudio) values('{0}')",this.NombreEstudio));
+            retorno =  conexion.Ejecutar(String.Format("Insert Into Estudios (NombreEstudio) values('{0}')",this.NombreEstudio));
             return retorno;
         }
 
         public override bool Editar()
         {
             bool retorno = false;
-                                                              
-            conexion.Ejecutar(String.Format("update Estudios set NombreEstudio= '{0}' where EstudioId= '{1}'", this.NombreEstudio,this.EstudioId));
+
+            retorno = conexion.Ejecutar(String.Format("update Estudios set NombreEstudio= '{0}' where EstudioId= '{1}'", this.NombreEstudio,this.EstudioId));
             return retorno;
         }
 
         public override bool Eliminar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("Delete  Estudios  where  EstudioId = {0}", this.EstudioId));
+            retorno = conexion.Ejecutar(String.Format("Delete  Estudios  where  EstudioId = {0}", this.EstudioId));
             return retorno;
+
         }
 
         public override bool Buscar(int idBuscado)

@@ -28,21 +28,21 @@ namespace BLL
         public override bool Insertar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("Insert Into Actores (Nombre) values('{0}')",this.Nombre));
+            retorno = conexion.Ejecutar(String.Format("Insert Into Actores (Nombre) values('{0}')",this.Nombre));
             return retorno;
         }
 
         public override bool Editar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("update Actores set Nombre= '{0}' where ActorId = '{1}'", this.Nombre, this.ActorId));
+            retorno =  conexion.Ejecutar(String.Format("update Actores set Nombre= '{0}' where ActorId = '{1}'", this.Nombre, this.ActorId));
             return retorno;
         }
 
         public override bool Eliminar()
         {
             bool retorno = false;
-            conexion.Ejecutar(String.Format("Delete  Actores where ActorId ='{0}'", this.ActorId));
+            retorno = conexion.Ejecutar(String.Format("Delete  Actores where ActorId ='{0}'", this.ActorId));
             return retorno;
         }
 
