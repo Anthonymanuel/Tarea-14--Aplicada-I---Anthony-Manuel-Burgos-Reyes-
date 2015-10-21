@@ -12,7 +12,7 @@ namespace BLL
 {    /// <summary>
     /// Clase pelicula
     /// </summary>
-    public class Pelicula : ClaseMaestra
+    public class Peliculas : ClaseMaestra
     {
         
 
@@ -29,7 +29,7 @@ namespace BLL
         public string Actor { get; set; }
         public string Estudio { get; set; }
         public List <Actores> Actor1{get; set;}
-        public Pelicula()
+        public Peliculas()
         {
             this.Titulo = "";
             this.Descripcion = "";

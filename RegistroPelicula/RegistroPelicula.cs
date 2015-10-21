@@ -15,7 +15,7 @@ namespace RegistroPelicula
 {
     public partial class RegistroPelicula : Form
     {
-        Pelicula pelicula = new Pelicula();
+        Peliculas pelicula = new Peliculas();
         DataTable dt = new DataTable();
         
 

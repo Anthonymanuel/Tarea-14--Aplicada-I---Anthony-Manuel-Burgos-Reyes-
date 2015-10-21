@@ -25,7 +25,7 @@ namespace RegistroPelicula
 
         private void BuscarButton_Click_1(object sender, EventArgs e)
         {
-            Pelicula pelicula = new Pelicula();
+            Peliculas pelicula = new Peliculas();
             DataTable dt = new DataTable();
             string consulta;
             switch (ConsultaComboBox.SelectedIndex) {
